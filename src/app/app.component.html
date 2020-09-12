@@ -1,0 +1,13 @@
+<div class="row">
+  <header id="main-header">
+    <h2>{{title}}</h2>
+  </header>
+  <div class="container">
+    <div class="row">
+      <app-yen [yenConverted]="yenConverted"
+               (yenToUsd)="onUsdDisplay($event)">loading...</app-yen>
+      <app-usd [yen]="usdConverted"
+               (usd)="onYenDisplay($event)">loading..</app-usd>
+    </div>
+  </div>
+</div>
